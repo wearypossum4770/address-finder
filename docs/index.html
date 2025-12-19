@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Date Input Example</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <script>
+      const child = Object.assign(document.createElement("input"), {
+        type: "date",
+        value: "2017-06-01",
+        id: "some-date-element",
+      });
+      document.body.appendChild(child);
+
+      const dateControl = document.querySelector("input[type='date']");
+      console.log(child.valueAsDate);
+      console.log(child.valueAsNumber);
+    </script>
+  </body>
+</html>
